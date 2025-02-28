@@ -144,8 +144,6 @@ services:
   
   webserver:
     image: apache/airflow:latest-python3.8
-    platform: linux/arm64  # Ensures ARM64 compatibility
-    restart: always
     depends_on:
       - postgres
     environment:
